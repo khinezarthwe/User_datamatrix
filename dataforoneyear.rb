@@ -1,3 +1,5 @@
+# thown loz ma ya thay
+
 require 'rubygems'
 require 'csv'
 require 'date'
@@ -12,6 +14,7 @@ data.each do|record|
 	end 
 
 end
-CSV.open("output_data/Data_1.csv","w") do |csvobject|	
+result_arr = CSV.parse(result_arr)
+CSV.open("output_data/2009.csv","w") do |csvobject|	
 			csvobject << result_arr
 end
