@@ -34,7 +34,8 @@ if(ARGV.length != 2)
 end
 result = MergeCsv.run(ARGV[0], ARGV[1])
 arr_of_arrs = CSV.parse(result)
-CSV.open("output_data/Data_1.csv","w") do |csvobject|
+
+CSV.open("output_data/User1_to_User4.csv","w") do |csvobject|
 		arr_of_arrs.each do |row_arr|
 			csvobject << row_arr
 		end
